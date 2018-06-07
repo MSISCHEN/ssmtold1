@@ -1,0 +1,93 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Administrator
+  Date: 2018/5/31
+  Time: 20:15
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<html>
+<head>
+
+    <title>后台管理</title>
+
+
+    <link rel="stylesheet" href="/static/bootstrap3.3.7/css/bootstrap.css">
+    <script src="/static/bootstrap3.3.7/js/jquery.min.js"></script>
+    <script src="/static/bootstrap3.3.7/js/bootstrap.js"></script>
+    <script src="/static/bootstrap3.3.7/js/holder.js"></script>
+    <style>
+        * {
+            font-family: 微软雅黑;
+        }
+
+        body {
+            padding-top: 50px;
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="container">
+    <h1 class="page-header">boostrap前端框架</h1>
+    <!-- 导航条的颜色：navbar-default：默认颜色  navbar-inverse：反色-->
+    <!--navbar-fixed-top 把导航条固定在顶端，相对于页面的滚动条的顶端
+       navbar-fixed-bottom 把导航条固定在低端，相对于页面的滚动条的低端
+    -->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header">
+                <a href="" class="navbar-brand">TOLD
+                    <!--如果有logo可以加这里，并且把文字去掉，设置height=100%就可以正常显示-->
+                </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="mynavbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="">起步</a></li>
+                    <li><a href="">全局CSS样式</a></li>
+                    <li><a href="">组件</a></li>
+                    <li><a href="">JavaScript插件</a></li>
+                    <li><a href="">定制</a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                            <span>网站实例 <span class="caret"></span> </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">java</a></li>
+                            <li><a href="">linux</a></li>
+                            <li><a href="">php</a></li>
+                            <li><a href="">c</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="">bootstrap中文网</a></li>
+                </ul>
+                <form action="" class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-warning"><span class="glyphicon glyphicon-search"></span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </nav>
+</div>
+</body>
+</html>

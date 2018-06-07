@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--全局setting配置，根据需要添加-->
+
+    <!--别名定义-->
+    <typeAliases>
+        <!--针对单个别名定义
+            type：类型的路径
+            alias：别名
+        -->
+        <!--<typeAlias type="com.cyj.pojo.User" alias="user"/>-->
+        <!--批量别名定义
+            指定包名，mybatis自动扫描包中的pojo类，自动定义别名，别名就是类名（首字母大写或小写）
+        -->
+        <package name="com.cyj.pojo"/>
+    </typeAliases>
+    <!--配置mapper
+        由于使用spring和mybatis的整合包进行mapper扫描，这里不需要配置了。
+        必须遵循：mapper.xml和mapper.java文件同名且在一个目录
+    -->
+    <!--<mappers></mappers>-->
+
+</configuration>
